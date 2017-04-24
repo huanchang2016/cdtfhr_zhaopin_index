@@ -129,24 +129,9 @@ h1.logo{
 .header_searchTxt{
 	height: 40%;
 }
-@media only screen and (min-device-width: 1024px){
-	.header_searchTxt{
-		margin-left: 60%;
-	}
-}
-@media only screen 
-and (max-device-width: 1020px)
-and (min-device-width: 768px){
-	.header_searchTxt{
-		margin-left: 45%;
-	}
-}
-@media only screen 
-and (max-device-width : 767px)
-and (min-device-width : 640px) {
-	.header_searchTxt{
-		margin-left: 40%;
-	}
+
+.header_searchTxt{
+		float: right;
 }
 @media only screen 
 and (max-device-width: 640px){

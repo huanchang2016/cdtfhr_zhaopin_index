@@ -1,4 +1,9 @@
 window.onload = function(){
+	// 下拉选框样式
+	$(function() {
+		$('.my-select').chosen();
+	});
+
 	$(function(){
 			//首页内容加载header、nav、footer以及首页内容部分模块
 			// 由于下拉选项的样式问题，暂时先不加载。
