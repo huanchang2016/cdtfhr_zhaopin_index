@@ -3,6 +3,7 @@
 /*header*/
 body{
 	font-size: 14px;
+	background: #e4e0de;
 }
 /*样式重置*/
 html,  div, object, iframe,
@@ -91,7 +92,7 @@ input::-ms-input-placeholder{
 /*header部分*/
 .header{
 	padding: 20px 0 ;
-	background: #f6f6f6;
+	background: #e4e0de;
 	box-sizing: border-box;
 }
 /*header中元素垂直居中*/
@@ -110,7 +111,7 @@ h1.logo{
 }
 
 .header_bg{
-	height: 50%;
+	/*height: 50%;*/
 }
 .header_search{
 	padding-top: 10%;
@@ -118,7 +119,7 @@ h1.logo{
 }
 @media screen and (min-device-width: 600px){
 	.header_search{
-		background: url("../../images/header_bg1.png") no-repeat left -5px;
+		background: url("../../images/header_bg5.png") no-repeat left top;
 		background-size: contain;
 	}
 }
@@ -281,11 +282,11 @@ ul.nav_bar_layout{
 
 /*footer*/
 .footer{
-	background: #f2f3f7;
+	background: #e4e0de;
+	border-top: 1px solid #ccc;
 }
 .fn_list_con{
 	height: 100%;
-	margin-top: 20px;
 	padding-top: 30px;
 }
 .fn_list{

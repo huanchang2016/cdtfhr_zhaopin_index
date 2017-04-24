@@ -8,18 +8,21 @@
 	overflow: hidden;
 }
 /*轮播滚动区域*/
+#cdtfhr_view{
+	background: #e4e0de;
+	padding-bottom: 20px;
+}
 .banner{
-	background: #f2f3f7;
 	padding-top: 20px;
 }
 
 .banner-left{
 	padding-right: 10px!important;
-	padding-left: 10px!important;
+	padding-left: 0px!important;
 }
 .banner-right{
 	padding-left: 10px!important;
-	padding-right: 10px!important;
+	padding-right: 0px!important;
 }
 .banner-left>div, .banner-right>div{
 	background: #fff;
@@ -74,7 +77,7 @@
 
 /*登录注册、高级职位搜素部分*/
 .loginSearch{
-	background: #f2f3f7;
+	
 }
 .loginForm{
 	padding-bottom: 10px;
