@@ -1,20 +1,22 @@
 window.onload = function(){
-	// 下拉选框样式
-	$(function() {
-		$('.my-select').chosen();
-	});
+	$(function(){
+      //首页内容加载header、nav、footer以及首页内容部分模块
+      // 由于下拉选项的样式问题，暂时先不加载。
+      
+      $("#header").load("./html/header.html");
+
+      $("#nav").load("./html/navbar.html");
+
+      $("#cdtfhr_view").load("./html/index_con.html")
+
+      $("#footer").load("./html/footer.html");
+
+  	});
+
+	
 
 	$(function(){
-			//首页内容加载header、nav、footer以及首页内容部分模块
-			// 由于下拉选项的样式问题，暂时先不加载。
-			$("#nav").load("./html/navbar.html");
-
-			$("#footer").load("./html/footer.html");
-
-	});
-
-	$(function(){
-
+		
 		// 个人、企业用户登录处切换内容
 		$(".login_user_form li").eq(0).show()
 		$(".login_user_tit li").click(function(){
