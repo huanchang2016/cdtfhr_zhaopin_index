@@ -1,14 +1,6 @@
 window.onload = function(){
 	$(function(){
-      //首页内容加载header、nav、footer以及首页内容部分模块
-      // 由于下拉选项的样式问题，暂时先不加载。
       
-      $("#header").load("./html/header.html");
-
-      $("#nav").load("./html/navbar.html");
-
-      $("#cdtfhr_view").load("./html/index_con.html")
-
       $("#footer").load("./html/footer.html");
 
   	});
@@ -17,6 +9,8 @@ window.onload = function(){
 
 	$(function(){
 		
+
+
 		// 个人、企业用户登录处切换内容
 		$(".login_user_form li").eq(0).show()
 		$(".login_user_tit li").click(function(){
@@ -46,23 +40,6 @@ window.onload = function(){
 			$(this).parent().next(".street_view").html($(this).text());
 		});
 
-		/*var _streetName = $(".street_name").eq(0),
-			_streetNameLis = $(".street_name li"),
-			_streetLiWidth = _streetNameLis.eq(0).width(),
-			_streetLis = _streetNameLis.length;
-		// 动态设置十三街道，标题列表的高度
-		$(window).resize(function(){
-			let _dWidth = _streetName.width();
-
-			// 每行可以放置_streetN个 li元素
-			let _streetN = Math.floor(_dWidth / _streetLiWidth);
-			// 一共需要 _streetColN 行放置li元素
-			let _streetColN = Math.ceil(_streetLis / _streetN);
-			
-			console.log(_streetName);
-			// 设置.street_name的高度
-			_streetName.height = (40 * _streetColN) + "px";
-			
-		});*/
+		
 	});
 }

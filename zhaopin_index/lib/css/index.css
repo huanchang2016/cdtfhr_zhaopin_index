@@ -155,8 +155,8 @@
 	margin: 0 5px;
 }
 .login_check_img img{
-	
 	width: 100%;
+	height: 100%;
 }
 .change_check_number{
 	line-height: 30px;
@@ -338,7 +338,6 @@ and (max-device-width : 304px) {
 	float: left;
     padding: 0 10px;
     border-bottom: 1px solid #ccc;
-    border-right: 1px solid #ccc;
 }
 .street_name .street_tit{
 	padding: 0;

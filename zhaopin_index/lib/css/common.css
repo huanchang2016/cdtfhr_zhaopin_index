@@ -245,7 +245,7 @@ and (max-device-width : 640px) {
 .am-topbar{
 	background: none;
 }
- .navbar .nav_bar_layout li>a{
+.navbar .nav_bar_layout>li>a{
 	color: #fff;
 }
 .navbar .nav_bar_layout li:hover a{
