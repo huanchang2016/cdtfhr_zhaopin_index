@@ -1,0 +1,384 @@
+/*补充样式*/
+	
+	/*banner*/
+.bl_training ul li, .bl_evaluation ul li, .br_agent ul li{
+	width: 80%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+/*轮播滚动区域*/
+.banner{
+	background: #f2f3f7;
+	padding-top: 20px;
+}
+
+.banner-left{
+	padding-right: 10px!important;
+	padding-left: 10px!important;
+}
+.banner-right{
+	padding-left: 10px!important;
+	padding-right: 10px!important;
+}
+.banner-left>div, .banner-right>div{
+	background: #fff;
+	padding-bottom: 30px;
+	border: 1px solid #ccc;
+}
+.banner-right .br_service{
+	padding-bottom: 0;
+}
+.banner-left ul , .banner-right ul{
+	padding: 10px 10px;
+}
+.b_title{
+	height: 30px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 30px;
+	background: #c9caca;
+}
+.banner-left .bl_evaluation, .banner-right .br_service{
+	margin-top: 20px;
+}
+.b_training_bg{
+	background: url(../../images/banner_left_peixun_title.png) no-repeat left top;
+}
+.b_evaluation_bg{
+	background: url(../../images/banner_left_peixun_title.png) no-repeat left top;
+}
+.b_agent_bg{
+	background: url(../../images/banner_left_peixun_title.png) no-repeat left top;
+}
+.b_service_bg{
+	background: url(../../images/banner_left_peixun_title.png) no-repeat left top;
+}
+.b_training_bg, .b_evaluation_bg, .b_agent_bg, .b_service_bg{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+}
+.banner-left>div:hover, .banner-right>div:hover{
+	box-shadow: 6px 2px 20px #6d6262;
+}
+/*公共服务样式*/
+.pub_service li{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.pub_service li:hover{
+	background: #f2f3f7;
+}
+
+/*登录注册、高级职位搜素部分*/
+.loginSearch{
+	background: #f2f3f7;
+}
+.loginForm{
+	padding-bottom: 10px;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+.login_user, .login_user_tit, .login_user_form{
+	width: 100%;
+}
+.login_user_tit{
+	height: 40px;
+}
+.login_active{
+	color: #fff;
+	background: #565147;
+	border-bottom: 1px solid #ccc;
+}
+.login_user_tit>.am-fl{
+	border-right: 1px solid #ccc;
+}
+.login_user_tit>li{
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.login_user_form>li{
+	display: none;
+}
+.login_user_form form{
+	padding: 5px 0;
+	font-size: 16px;
+}
+.login_user_form form>div{
+	width: 100%;
+	height: 30px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.login_user_form .login_btn{
+	margin-top: 10px;
+	text-align: center;
+}
+.login_btn>button{
+	width: 50%;
+}
+.login_btn>button:hover{
+	background: #29bb64;
+	border-color: #29bb64;
+	color: #fff;
+}
+.login_btn>button:visited{
+	background: #29bb64;
+	border-color: #29bb64;
+	color: #fff;
+}
+#username, #password, #com_username, #com_password{
+	width: 60%;
+}
+/*表单验证码*/
+.login_check{
+
+}
+.login_check_text, .login_check_img, .change_check_number{
+	display: inline-block;
+	height: 30px;
+	width: 30%;
+	float: left;
+}
+.login_check_text{
+	width: 22%;
+}
+.login_check_img{
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	margin: 0 5px;
+}
+.login_check_img img{
+	
+	width: 100%;
+}
+.change_check_number{
+	line-height: 30px;
+	text-align: center;
+	background: #c9c9c9;
+	border-radius: 5px;
+}
+.change_check_number:hover{
+	background: #0e90d2;
+	color: #fff;
+}
+.change_check_number:active{
+	background: #29bb64;
+	color: #fff;
+}
+.login_submit{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 14px;
+}
+/*.login_other{
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-around;
+}*/
+@media only screen 
+and (min-device-width : 950px)  {
+	.login_other{
+		margin-top: 10px;
+		display: flex;
+		justify-content: space-around;
+	}
+}
+@media only screen 
+and (max-device-width : 950px)  {
+	.login_other{
+		margin-top: 10px;
+		display: block;
+	}
+	.login_other a{
+		display: block;
+		margin: 10px 10px;
+		text-align: center;
+	}
+}
+
+.login_other>a{
+	background: #ccc;
+	border-radius: 5px;
+	padding: 5px;
+}
+.login_other>a:hover{
+	background: #3493e6;
+	color: #fff;
+	font-size: 16px;
+}
+/*职位搜索*/
+
+.searchJobs{
+	height: 100%;
+	padding: 30px;
+	background: #f7f7f7;
+}
+.findJobs, .choeseJobs{
+	width: 100%;
+	padding-left: 20px;
+}
+/*高级搜索输入框*/
+.findJobs{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.job_txt{
+	width:60%;
+	height: 44px;
+}
+#jobsText, #job_search_btn{
+	display: inline-block;
+	height: 44px;
+	float: left;
+	border: 1px solid #1369c0;
+}
+#jobsText{
+	outline: none;
+	width: 86%;
+	text-indent: 10px;
+	box-sizing: border-box;
+}
+#job_search_btn{
+	width: 14%;
+	color: #fff;
+	background: #1369c0;
+}
+
+/*高级搜索选项区*/
+.choeseJobs{
+	margin-top: 20px;
+}
+.choeseTit{
+	height: 30px;
+	font-weight: 600;
+	margin-right: 10px;
+}
+.choeseJobs>div{
+	height: 30px;
+	clear: both;
+	margin-top: 10px;
+}
+.choeseJobs>div>ul{
+	height: 30px;
+	width: 80%;
+}
+.overHide{
+	overflow: hidden;
+}
+
+.choeseJobs>div>ul>li{
+	float: left;
+	padding: 0 10px;
+	line-height: 30px;
+}
+.choeseMore>ul.choese_detailed{
+	display: flex;
+	justify-content: space-around;
+}
+.more{
+	font-size: 12px;
+	margin-right: 10px;
+	border: 1px solid #3488dc;
+	color: #3488dc;
+	padding: 0 5px;
+}
+.moreInfo{
+	height: 60px!important;
+}
+/*choeseJob_active*/
+.choeseJob_active{
+	color: #fff;
+	background: #1369c0;
+	border-radius: 5px;
+}
+
+/*天府新区十三街道信息发布*/
+.th_street{
+	min-height: 200px;
+	height: auto!important;
+	height: 200px;
+	margin-top: 20px;
+}
+.street_name{
+	height: 40px;
+	line-height: 40px;
+}
+@media only screen 
+and (min-device-width : 532px) 
+and (max-device-width : 1064px) {
+	.street_name{
+		height: 80px;
+	}
+}
+@media only screen 
+and (min-device-width : 304px) 
+and (max-device-width : 532px) {
+	.street_name{
+		height: 120px;
+	}
+}
+@media only screen 
+and (max-device-width : 304px) {
+	.street_name{
+		height: 160px;
+	}
+}
+.street_name li{
+	height: 40px;
+	font-size: 14px;
+	float: left;
+    padding: 0 10px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.street_name .street_tit{
+	padding: 0;
+}
+.street_tit h4{
+	font-weight: 600;
+	background: #3f6779;
+	color: #fff;
+	padding: 0 10px;
+}
+.street_view{
+	min-height: 200px;
+	height: auto!important;
+	height: 400px;
+}
+/*选中的街道*/
+.street_active{
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	background: #3f6779;
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+
+/* idx_ad_images 广告内容瀑布流布局*/
+.ad_imgList{
+	width: 100%;
+	height: 100%;
+}
+.ad_imgList>li{
+	margin-top: 10px;
+	height: 50px;
+	width: 50%;
+	float: left;
+}
+.ad_imgList>li img{
+	width: 100%;
+	height: 50px;
+	border: 1px solid #ccc;
+}
+
