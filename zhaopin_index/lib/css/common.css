@@ -119,7 +119,7 @@ h1.logo{
 }
 @media screen and (min-device-width: 600px){
 	.header_search{
-		background: url("../../images/header_bg5.png") no-repeat left top;
+		background: url("../../images/header_top_bg.png") no-repeat 20px top;
 		background-size: contain;
 	}
 }
@@ -271,7 +271,13 @@ ul.nav_bar_layout{
 } 
  
 
-
+/*主体内容样式*/
+#cdtfhr_view{
+	min-height: 500px;
+	height: auto!important;
+	height: 500px;
+	padding-bottom: 30px;
+}
 
 
 
@@ -284,6 +290,7 @@ ul.nav_bar_layout{
 .footer{
 	background: #e4e0de;
 	border-top: 1px solid #ccc;
+	padding-bottom: 20px;
 }
 .fn_list_con{
 	height: 100%;

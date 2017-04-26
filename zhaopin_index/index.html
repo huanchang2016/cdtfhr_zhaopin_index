@@ -29,7 +29,15 @@
 	<!-- Tile icon for Win8 (144x144 + tile color) -->
 	<meta name="msapplication-TileImage" content="./lib/images/logo_image.png">
 	<meta name="msapplication-TileColor" content="#0e90d2">
-	<link rel="stylesheet" href="./lib/css/amazeui.min.css">
+  <!--[if lt IE 9]>
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="./lib/js/jquery.min.js"></script>
+  <script type="text/javascript" src="./lib/js/amazeui.min.js"></script>
+  <script type="text/javascript" src="./lib/js/common.js"></script>
+  <link rel="stylesheet" href="./lib/css/amazeui.min.css">
   <link rel="stylesheet" href="./lib/css/common.css">
   <link rel="stylesheet" href="./lib/css/index.css">
 </head>
@@ -42,75 +50,10 @@
   
 
   <!-- header部分 -->
-  <div id="header">
-    <header class="header am-g am-g-collapse">
-      <div class="header_md am-container">
-        <div class="header_logo am-u-lg-2 am-u-md-2 am-hide-sm-only">
-            <h1 class="logo">
-              <a target="_blank" href="http://www.cdtfhr.com"><img src="./lib/images/logo_image.png" alt=""></a>
-            </h1>
-        </div>
-        <div class="header_search am-u-lg-9 am-u-md-9 am-u-sm-12 am-u-centered">
-            <div class="header_bg am-hide-sm-only"></div>
-            <div class="header_searchTxt">
-              <form class="am-form-inline" role="form">
-                <div class="search_class">
-                    <select  data-am-selected="{btnWidth: '100%', btnSize: 'sm', btnStyle: 'secondary'}">
-                        <option value="option1">找工作</option>
-                        <option value="option2">三天以内</option>
-                        <option value="option3">一周以内</option>
-                        <option value="option4">最近一个月</option>
-                      </select>
-                    </ul>
-                </div>
-                <div class="head_search_text am-form-group">
-                  <input type="text" class="am-form-field" placeholder="输入关键字查询">
-                </div>
-                <div class="search_button">
-                  <button type="submit" class="head_search_btn am-btn am-btn-default am-icon-search"></button>
-                </div>
-              </form>
-            </div>
-        </div>
-        <div class="header_phone am-u-lg-1 am-u-md-1 am-hide-sm-only">
-          <img src="./lib/images/96350bf12ad8ba42c2b03852c51a7541_loginqrcode_awxgzh.jpg" alt="">
-        </div>
-      </div>
-    </header>
-  </div>
+  <div id="header"></div>
   
   <!-- 主导航栏 -->
-  <div id="nav">
-    <nav class="navbar am-g am-g-collapse">
-    <header class="am-topbar am-container">
-        <h2 class="navbar_left_bg am-topbar-brand am-show-sm-only">
-          <a href="http://www.cdtfhr.com"><img src="./images/14763973547.PNG" alt=""></a>
-        </h2>
-        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
-
-        <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
-          <ul class="nav_bar_layout am-nav am-nav-pills am-topbar-nav">
-            <li class="am-active"><a target="_self" href="javascript:;"><span class="am-icon-home"></span> &nbsp;首页</a></li>
-            <li class="am-dropdown" data-am-dropdown>
-              <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;" target="_self">
-                <span class="am-icon-home"></span> &nbsp;菁英招聘 &nbsp;<span class="am-icon-caret-down"></span>
-              </a>
-              <ul class="am-dropdown-content">
-                <li><a href="http://www.cdtfhr.com/zhaopin"><span class="am-icon-road"></span> &nbsp;网络招聘</a></li>
-                <li><a href="#"><span class="am-icon-random"></span> &nbsp;招聘委托</a></li>
-              </ul>
-            </li>
-            <li><a href="javascript:;" target="_self"><span class="am-icon-hourglass-start"></span> &nbsp;菁英培训</a></li>
-            <li><a href="javascript:;" target="_self"><span class="am-icon-dribbble"></span> &nbsp;菁英代理</a></li>
-            <li><a href="javascript:;" target="_self"><span class="am-icon-ioxhost"></span> &nbsp;菁英测评</a></li>
-            <li><a href="javascript:;" target="_self"><span class="am-icon-instagram"></span> &nbsp;公共服务</a></li>
-            <li><a href="javascript:;" target="_self"><span class="am-icon-lastfm"></span> &nbsp;关于我们</a></li>
-          </ul>
-          
-        </div>
-      </header>
-  </nav>
-  </div>
+  <div id="nav"></div>
   
   <!-- 主内容区——banner -->
   <div id="cdtfhr_view">
@@ -182,7 +125,7 @@
               </ul>
             </div>
             <div class="br_service">
-              <h3 class="b_title"><span class="b_service_bg am-fl"></span>公共服务</h3>
+              <h3 class="b_title"><span class="b_service_bg am-fl"></span>菁英服务</h3>
               <ul class="pub_service am-avg-sm-2 am-avg-md-2 am-avg-lg-2">
                 <li class="am-u-centered am-vertical-align-middle"><a href="#this"><img src="http://oo8mv70jl.bkt.clouddn.com/hujika.png" alt=""></a></li>
                 <li class="am-u-centered am-vertical-align-middle"><a href="#this"><img src="http://oo8mv70jl.bkt.clouddn.com/student.png" alt=""></a></li>
@@ -438,13 +381,6 @@
 
 <!-- footer 公共内容 -->
   <div id="footer"></div>
-
-<!--[if lt IE 9]>
-<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
-<script type="text/javascript" src="./lib/js/jquery.min.js"></script>
-<script type="text/javascript" src="./lib/js/amazeui.min.js"></script>
+</body>
 <script type="text/javascript" src="./lib/js/index.js"></script>
 </html>
