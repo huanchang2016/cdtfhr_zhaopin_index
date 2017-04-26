@@ -1,5 +1,3 @@
-
-
 /*header*/
 body{
 	font-size: 14px;
@@ -67,7 +65,6 @@ input::-ms-input-placeholder{
 	top: -5px;
 	right: 5px;
 }
-
 /*清除浮动*/
 .cf{
 	clear:both;
@@ -88,7 +85,6 @@ input::-ms-input-placeholder{
     background-color: #0671a0;
 	border-color: #0671a0;
 }
-
 /*header部分*/
 .header{
 	padding: 20px 0 ;
@@ -96,7 +92,6 @@ input::-ms-input-placeholder{
 	box-sizing: border-box;
 }
 /*header中元素垂直居中*/
-
 .header_md>div{
 	height: 100px;
 	padding: 10px 0;
@@ -108,10 +103,6 @@ h1.logo{
 }
 .header_logo img{
 	height: 100%;
-}
-
-.header_bg{
-	/*height: 50%;*/
 }
 .header_search{
 	padding-top: 10%;
@@ -148,7 +139,6 @@ and (min-device-width: 420){
 		margin-top: 40px;
 	}
 }
-
 .header_searchTxt{
 		float: right;
 }
@@ -167,13 +157,6 @@ and (min-device-width : 500px) {
 		height: 40px;
 	}
 }
-@media only screen 
-and (max-device-width : 500px) {
-	/*.header_searchTxt form{
-		height: 40px;
-	}*/
-}
-	
 .header_searchTxt form a.am-dropdown-toggle{
 	line-height: 40px;
 }
@@ -182,16 +165,19 @@ and (max-device-width : 500px) {
 	margin-bottom: 0;
 	float: left;
 }
-.search_class{
-	border-left: 1px solid #ccc;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-}
 .search_class>select{
-	height: 38px;
-	border: 0;
+	height: 40px;
+	box-sizing: border-box;
+	border: 1px solid #3f6779;
+	background: #3f6779;
+	color: #fff;
 }
-
+.search_class>div{
+	background: #3f6779;
+}
+.search_class>div>button{
+	color: #fff;
+}
 @media only screen
 and (max-device-width : 640px) {
 	.search_class>select{
@@ -207,29 +193,27 @@ and (max-device-width : 640px) {
 .head_search_btn {
     height: 100%;
     padding: 0 15px;
-    border: 1px solid #ccc;
+}
+.head_search_btn,.head_search_text>input{
+	font-size: 14px;
+	box-sizing: border-box;
+	border: 1px solid #3f6779;
     border-left: 0;
 }
-.head_search_btn,.head_search_text{
-	font-size: 14px;
-}
-.header_search .am-btn{
-	border: 0;
+.head_search_text>input:focus{
+	border-color: #3f6779;
 }
 .am-form-field, .am-btn{
 	font-size: 1.0rem;
 }
-
 .header_phone{
 	text-align: center;
 }
 .header_phone img{
 	height: 100%;
 }
-
 /*导航栏样式*/
  .navbar{
-	/*height: 50px;*/
 	background: #3f6779;
 	border-top: 1px solid #e7e7e7;
 	border-bottom: 1px solid #e7e7e7;
@@ -269,8 +253,6 @@ ul.nav_bar_layout{
 	    float: none; 
 	}
 } 
- 
-
 /*主体内容样式*/
 #cdtfhr_view{
 	min-height: 500px;
@@ -278,14 +260,6 @@ ul.nav_bar_layout{
 	height: 500px;
 	padding-bottom: 30px;
 }
-
-
-
-
-
-
-
-
 /*footer*/
 .footer{
 	background: #e4e0de;

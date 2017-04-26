@@ -1,6 +1,5 @@
 /*补充样式*/
-	
-	/*banner*/
+/*banner*/
 .bl_training ul li, .bl_evaluation ul li, .br_agent ul li{
 	width: 80%;
 	white-space: nowrap;
@@ -15,7 +14,6 @@
 .banner{
 	padding-top: 20px;
 }
-
 .banner-left{
 	padding-right: 10px!important;
 	padding-left: 0px!important;
@@ -66,21 +64,24 @@
 .banner-left>div:hover, .banner-right>div:hover{
 	box-shadow: 6px 2px 20px #6d6262;
 }
-/*公共服务样式*/
+/*菁英服务样式*/
 .pub_service li{
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 .pub_service li:hover{
 	background: #f2f3f7;
 }
-
+.pub_service li a {
+	font-size: 14px;
+}
 /*登录注册、高级职位搜素部分*/
 .loginSearch{
 	
 }
 .loginForm{
-	padding-bottom: 10px;
+	width: 23%;
+	padding-bottom: 15px;
 	background: #fff;
 	border: 1px solid #ccc;
 }
@@ -140,9 +141,6 @@
 	width: 60%;
 }
 /*表单验证码*/
-.login_check{
-
-}
 .login_check_text, .login_check_img, .change_check_number{
 	display: inline-block;
 	height: 30px;
@@ -181,11 +179,6 @@
 	align-items: center;
 	font-size: 14px;
 }
-/*.login_other{
-	margin-top: 10px;
-	display: flex;
-	justify-content: space-around;
-}*/
 @media only screen 
 and (min-device-width : 950px)  {
 	.login_other{
@@ -206,7 +199,6 @@ and (max-device-width : 950px)  {
 		text-align: center;
 	}
 }
-
 .login_other>a{
 	background: #ccc;
 	border-radius: 5px;
@@ -218,7 +210,6 @@ and (max-device-width : 950px)  {
 	font-size: 16px;
 }
 /*职位搜索*/
-
 .searchJobs{
 	height: 100%;
 	padding: 30px;
@@ -255,7 +246,6 @@ and (max-device-width : 950px)  {
 	color: #fff;
 	background: #1369c0;
 }
-
 /*高级搜索选项区*/
 .choeseJobs{
 	margin-top: 20px;
@@ -303,7 +293,6 @@ and (max-device-width : 950px)  {
 	background: #1369c0;
 	border-radius: 5px;
 }
-
 /*天府新区十三街道信息发布*/
 .th_street{
 	min-height: 200px;
@@ -365,8 +354,6 @@ and (max-device-width : 304px) {
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
-
-
 /* idx_ad_images 广告内容瀑布流布局*/
 .ad_imgList{
 	width: 100%;
@@ -383,4 +370,3 @@ and (max-device-width : 304px) {
 	height: 50px;
 	border: 1px solid #ccc;
 }
-
